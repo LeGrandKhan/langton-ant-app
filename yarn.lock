@@ -282,9 +282,22 @@
   version "22.0.1"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/@types/jest/-/jest-22.0.1.tgz#6370a6d60cce3845e4cd5d00bf65f654264685bc"
 
+"@types/material-ui@0.20.1":
+  version "0.20.1"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/@types/material-ui/-/material-ui-0.20.1.tgz#c4ea0c5ad07d89732959383a3706d477018093f0"
+  dependencies:
+    "@types/react" "*"
+    "@types/react-addons-linked-state-mixin" "*"
+
 "@types/node@*", "@types/node@9.3.0":
   version "9.3.0"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
+
+"@types/react-addons-linked-state-mixin@*":
+  version "0.14.18"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/@types/react-addons-linked-state-mixin/-/react-addons-linked-state-mixin-0.14.18.tgz#6977ae59e19aa0ce3a5d7a9e057961aaf1afe959"
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-dom@16.0.3":
   version "16.0.3"
@@ -2081,6 +2094,10 @@ chalk@2.3.0, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0:
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
 
+change-emitter@^0.1.2:
+  version "0.1.6"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/change-emitter/-/change-emitter-0.1.6.tgz#e8b2fe3d7f1ab7d69a32199aff91ea6931409515"
+
 chardet@^0.4.0:
   version "0.4.2"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/chardet/-/chardet-0.4.2.tgz#b5473b33dc97c424e5d98dc87d55d4d8a29c8bf2"
@@ -3681,7 +3698,7 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-fbjs@^0.8.12, fbjs@^0.8.16, fbjs@^0.8.9:
+fbjs@^0.8.1, fbjs@^0.8.12, fbjs@^0.8.16, fbjs@^0.8.9:
   version "0.8.16"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
   dependencies:
@@ -4364,6 +4381,10 @@ hoist-non-react-statics@1.x.x, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
+hoist-non-react-statics@^2.3.1:
+  version "2.3.1"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
+
 home-or-tmp@^2.0.0:
   version "2.0.0"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
@@ -4612,7 +4633,7 @@ inline-style-prefixer@^2.0.5:
     bowser "^1.0.0"
     hyphenate-style-name "^1.0.1"
 
-inline-style-prefixer@^3.0.6:
+inline-style-prefixer@^3.0.6, inline-style-prefixer@^3.0.8:
   version "3.0.8"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/inline-style-prefixer/-/inline-style-prefixer-3.0.8.tgz#8551b8e5b4d573244e66a34b04f7d32076a2b534"
   dependencies:
@@ -5434,7 +5455,7 @@ jsx-ast-utils@^2.0.0:
   dependencies:
     array-includes "^3.0.3"
 
-keycode@^2.1.9:
+keycode@^2.1.8, keycode@^2.1.9:
   version "2.1.9"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/keycode/-/keycode-2.1.9.tgz#964a23c54e4889405b4861a5c9f0480d45141dfa"
 
@@ -5660,6 +5681,10 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
+lodash.merge@^4.6.0:
+  version "4.6.0"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
+
 lodash.mergewith@^4.6.0:
   version "4.6.0"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/lodash.mergewith/-/lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55"
@@ -5692,6 +5717,10 @@ lodash.templatesettings@^4.0.0:
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/lodash.templatesettings/-/lodash.templatesettings-4.1.0.tgz#2b4d4e95ba440d915ff08bc899e4553666713316"
   dependencies:
     lodash._reinterpolate "~3.0.0"
+
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -5795,6 +5824,22 @@ marked@^0.3.9:
 material-colors@^1.2.1:
   version "1.2.5"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/material-colors/-/material-colors-1.2.5.tgz#5292593e6754cb1bcc2b98030e4e0d6a3afc9ea1"
+
+material-ui@0.20.0:
+  version "0.20.0"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/material-ui/-/material-ui-0.20.0.tgz#85411bb59c916c9c7703f29dcffc44e3a67d5111"
+  dependencies:
+    babel-runtime "^6.23.0"
+    inline-style-prefixer "^3.0.8"
+    keycode "^2.1.8"
+    lodash.merge "^4.6.0"
+    lodash.throttle "^4.1.1"
+    prop-types "^15.5.7"
+    react-event-listener "^0.5.1"
+    react-transition-group "^1.2.1"
+    recompose "^0.26.0"
+    simple-assign "^0.1.0"
+    warning "^3.0.0"
 
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
@@ -7389,6 +7434,15 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
+react-event-listener@^0.5.1:
+  version "0.5.3"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/react-event-listener/-/react-event-listener-0.5.3.tgz#a8b492596ad601865314fcc2c18cb87b6ce3876e"
+  dependencies:
+    babel-runtime "^6.26.0"
+    fbjs "^0.8.16"
+    prop-types "^15.6.0"
+    warning "^3.0.0"
+
 react-fuzzy@^0.5.1:
   version "0.5.1"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/react-fuzzy/-/react-fuzzy-0.5.1.tgz#295c2a4079ad39402e05605d9d7accd2db8527b6"
@@ -7472,7 +7526,7 @@ react-textarea-autosize@^5.2.1:
   dependencies:
     prop-types "^15.6.0"
 
-react-transition-group@^1.1.2:
+react-transition-group@^1.1.2, react-transition-group@^1.2.1:
   version "1.2.1"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
   dependencies:
@@ -7599,6 +7653,15 @@ rechoir@^0.6.2:
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
   dependencies:
     resolve "^1.1.6"
+
+recompose@^0.26.0:
+  version "0.26.0"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/recompose/-/recompose-0.26.0.tgz#9babff039cb72ba5bd17366d55d7232fbdfb2d30"
+  dependencies:
+    change-emitter "^0.1.2"
+    fbjs "^0.8.1"
+    hoist-non-react-statics "^2.3.1"
+    symbol-observable "^1.0.4"
 
 recursive-readdir@2.2.1:
   version "2.2.1"
@@ -8182,6 +8245,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
+simple-assign@^0.1.0:
+  version "0.1.0"
+  resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/simple-assign/-/simple-assign-0.1.0.tgz#17fd3066a5f3d7738f50321bb0f14ca281cc4baa"
+
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -8686,7 +8753,7 @@ sw-toolbox@^3.4.0:
     path-to-regexp "^1.0.1"
     serviceworker-cache-polyfill "^4.0.0"
 
-symbol-observable@^1.0.3:
+symbol-observable@^1.0.3, symbol-observable@^1.0.4:
   version "1.1.0"
   resolved "https://afa-nrepo.azure-paas.intraxa/repository/npmjs-group/symbol-observable/-/symbol-observable-1.1.0.tgz#5c68fd8d54115d9dfb72a84720549222e8db9b32"
 

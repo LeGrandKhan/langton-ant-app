@@ -9,6 +9,8 @@ import { configure, shallow } from 'enzyme';
 
 import App from './';
 
+import { CircularProgress } from 'material-ui';
+
 // tslint:disable-next-line:no-any
 configure({ adapter: new Adapter() });
 
@@ -17,7 +19,8 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
 });
 
-it('App component contains an element with container css class', () => {
+it('App component contains default loader in material design', () => {
   const wrapper = shallow(<App />);
-  expect(wrapper.find('.App')).toHaveLength(1);
+  expect(wrapper.find('.center')).toHaveLength(1);
+  expect(wrapper.find(CircularProgress)).toHaveLength(1);
 });
