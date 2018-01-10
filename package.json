@@ -6,7 +6,10 @@
     "material-ui": "0.20.0",
     "react": "^16.2.0",
     "react-ats-scripts": "1.0.48",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "5.0.6",
+    "recompose": "0.26.0",
+    "redux": "3.7.2"
   },
   "scripts": {
     "start": "react-ats-scripts start",
