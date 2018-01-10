@@ -30,3 +30,9 @@ it('App component contains AppBar in material design', () => {
   expect(wrapper.find(AppBar)).toHaveLength(1);
   expect(wrapper.find(AppBar).prop('title')).toBe('Langton Ant');
 });
+
+it('App component contains AppBar in material design', () => {
+  const wrapper = shallow(<App title="toto" />);
+  expect(wrapper.find(AppBar)).toHaveLength(1);
+  expect(wrapper.find(AppBar).prop('title')).toBe('toto');
+});
