@@ -36,3 +36,9 @@ it('App component contains dynamic title on AppBar in material design', () => {
   expect(wrapper.find(AppBar)).toHaveLength(1);
   expect(wrapper.find(AppBar).prop('title')).toBe('toto');
 });
+
+// TODO test KO
+// it('App component contains playButton on AppBar in material design', () => {
+//   const wrapper = shallow(<App />);
+//   expect(wrapper.find(AppBar).prop('iconElementLeft')).toBe('<IconButton><NavigationPlay /></IconButton>');
+// });
