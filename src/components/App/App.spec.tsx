@@ -6,39 +6,44 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import { configure, shallow } from 'enzyme';
+import { AppBar, IconButton, Card } from 'material-ui';
+import AvPlayArrow from 'material-ui/svg-icons/av/play-arrow';
 
 import App from './App';
-
-import { AppBar } from 'material-ui';
+import Grid from './Grid';
 
 // tslint:disable-next-line:no-any
 configure({ adapter: new Adapter() });
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+describe('App.tsx', () => {
+  test('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<App />, div);
+  });
+
+  test('App component must contains header app bar', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find(AppBar)).toHaveLength(1);
+  });
+
+  test('AppBar must have a default title', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find(AppBar).prop('title')).toBe('Langton Ant');
+  });
+
+  test('AppBar must have a play buttone', () => {
+    const {iconElementLeft} = shallow(<App />).find(AppBar).props();
+    expect(iconElementLeft).toEqual(<IconButton><AvPlayArrow /></IconButton>);
+  });
+
+  test('AppBar s title can be defined', () => {
+    const wrapper = shallow(<App title="Langon Ant : First generation" />);
+    expect(wrapper.find(AppBar).prop('title')).toBe('Langon Ant : First generation');
+  });
+
+  test('Must have the grid in a Card', () => {
+    const wrapper = shallow(<App title="Langon Ant : First generation" />);
+    expect(wrapper.find(Card).length).toBe(1);
+    expect(wrapper.find(Card).find(Grid).length).toBe(1);
+  });
 });
-
-// it('App component contains default loader in material design', () => {
-//   const wrapper = shallow(<App />);
-//   expect(wrapper.find('.center')).toHaveLength(1);
-//   expect(wrapper.find(CircularProgress)).toHaveLength(1);
-// });
-
-it('App component contains AppBar in material design', () => {
-  const wrapper = shallow(<App />);
-  expect(wrapper.find(AppBar)).toHaveLength(1);
-  expect(wrapper.find(AppBar).prop('title')).toBe('Langton Ant');
-});
-
-it('App component contains dynamic title on AppBar in material design', () => {
-  const wrapper = shallow(<App title="toto" />);
-  expect(wrapper.find(AppBar)).toHaveLength(1);
-  expect(wrapper.find(AppBar).prop('title')).toBe('toto');
-});
-
-// TODO test KO
-// it('App component contains playButton on AppBar in material design', () => {
-//   const wrapper = shallow(<App />);
-//   expect(wrapper.find(AppBar).prop('iconElementLeft')).toBe('<IconButton><NavigationPlay /></IconButton>');
-// });
